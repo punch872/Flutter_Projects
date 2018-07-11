@@ -1,0 +1,4 @@
+#Wed Jul 11 10:14:41 ICT 2018
+base.0=/Users/k.punchok/AndroidStudioProjects/makeit_rain/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
