@@ -14,8 +14,7 @@ class MakeItRainState extends State<MakeItRain> {
   void _rainMoney(){
     setState((){
       //important - setState is called each time to update the UI
-      _moneyCounter = _moneyCounter+100;
-
+      _moneyCounter = _moneyCounter+1000;
     });
   }
   @override
@@ -40,7 +39,7 @@ class MakeItRainState extends State<MakeItRain> {
                 child: new Center(
                   child: new Text('\$ $_moneyCounter',
                     style: new TextStyle(
-                        color: Colors.green,
+                        color: _moneyCounter >=10000? Colors.redAccent : Colors.greenAccent,
                         fontSize: 46.9,
                         fontWeight: FontWeight.w800),
                   ),
