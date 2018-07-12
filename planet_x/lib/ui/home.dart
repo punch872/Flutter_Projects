@@ -106,7 +106,8 @@ class HomeState extends State<Home>{
                     ],
                   ),
                   new Padding(padding: new EdgeInsets.all(10.0)),
-                  new Text('$_formatText lbs',
+                  new Text
+                    (_weightController.text.isEmpty? "Please enter weight":'$_formatText lbs',//'$_formatText lbs',
                     style: new TextStyle(color: Colors.white,fontSize: 19.4,
                         fontWeight: FontWeight.w500),
                   )
@@ -126,14 +127,6 @@ double calculateWeight(String weight,double multiplier){
   }else{
     print("Wrong");
     return int.parse("180") * 0.38;
-  }
-
-}
-
-class test extends State<Home>{
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
   }
 
 }
